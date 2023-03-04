@@ -8,6 +8,46 @@
 
 - By Default, each Page in the `app` Directory is a Server Component which can not handle client-side Interactivity like Adding an `onSubmit()` to a Form Element
 - To add client-side Interactivity it is necessary to add the `'use client'` at the Top of the File
+- Server and Client Components can be interweaved
+
+## Client-Site Rendering (CSR)
+
+- A Server hosts the bundled Site with the Images and webpack bundled Files containing the Application Code and the needed Dependencies
+- Users can request the bundled Files to execute and run them in their Browser
+- Browsers are using `Interpreters` to interpret the received Files and render the actual Site that takes some decent Time
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/29623199/222896607-5bd921ab-8fb0-4131-acda-e73b84208bf6.png" alt="Client Site Rendering" />
+</P>
+
+<hr>
+
+## Server-Site Rendering (SSR) / Static Site Generation (SSG)
+
+- **SSR** provides Users with Server-side Rendering on every Request
+- **SSG** provides Users with statically generated Files that are created once at Build Time
+- A Server hosts the generated Files with the Images and webpack bundled Files
+- When a User requests a Page, the Server generates and renders it, so the User gets the finished Page instead of the bundled Files that would be needed to generate it in the Browser
+- The Server contains the pre-rendered HTML and JavaScript Files, so the User can interact with them
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/29623199/222897066-21a239e5-aee8-4f26-8a92-b58988bc1495.png" alt="Server Site Rendering" />
+</P>
+
+<hr>
+
+### Server Components
+
+- A Server Component is a Component that is fetched and rendered on the Server
+- All Components are by Default `Server Components`
+- The User only needs to download the generated HTML and JavaScript Files from the Server for the Server Components
+- Server Components are used generally for Data Fetching and Reducing the Client Side Files
+
+### Client Components
+
+- A Client Component is a Component that is fetched and rendered on the Client
+- The User only needs to download the JavaScript Files for the Client Components, so the Page loads faster
+- Client Components are used generally for Event Handling or Lifecycle Hooks like `useEffect()`
 
 ## Firebase
 

@@ -14,7 +14,6 @@
 - The Image Optimizer shrinks the Image Size, reducing the Size of the HTML View and the Time necessary to load the Images
 - NextJS has built-in Support for Accessing Data via GraphQL without the need to call a Backend Server through its built-in Library called `Apollo Client`
 
-
 ### Server Component
 
 - By Default, each Page in the `app` Directory is a Server Component which can not handle client-side Interactivity like Adding an `onSubmit()` to a Form Element

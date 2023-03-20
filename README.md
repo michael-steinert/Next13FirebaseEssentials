@@ -4,6 +4,17 @@
 
 - NextJs is a React Framework that makes Building powerful Full Stack (consisting of Front End and Backend) Applications a lot easier
 
+### Key Features
+- NextJS supports Server-Side Rendering (SSR), which allows it to deliver dynamic Content on the initial Page Load rather than waiting for an asynchronous Process to complete after the initial Page Load
+- As a Result of SSR, the Web Application renders faster and provides a smoother User Experience, making it more user-friendly than many alternative Frameworks that lack SSR Features
+- Automatic Code Splitting (ACS) is a NextJS Feature that allows to automatically separate the Code of a Web Application into smaller Bunldes, which are then loaded on Demand
+- As a Result of ACS the Browser loads only the Code required for a specific Page or Component rather than the full Source Code
+- NextJS offers a built-in Feature that enables Developers to import Data from external APIs using synchronous Code
+- NextJS offers an Image Optimizer to automatically optimizes and compresses Images while creating HTML Views
+- The Image Optimizer shrinks the Image Size, reducing the Size of the HTML View and the Time necessary to load the Images
+- NextJS has built-in Support for Accessing Data via GraphQL without the need to call a Backend Server through its built-in Library called `Apollo Client`
+
+
 ### Server Component
 
 - By Default, each Page in the `app` Directory is a Server Component which can not handle client-side Interactivity like Adding an `onSubmit()` to a Form Element
